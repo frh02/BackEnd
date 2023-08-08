@@ -5,10 +5,10 @@
         "profile_name": "default",
         "project_name": "webapp",
         "runtime": "python3.9",
-        "s3_bucket": "zappa-glg6gm13z",
+        "s3_bucket": "zappa-########",
         "manage_roles": false,
         "role_name": "dev-ZappaLambdaExecutionRole",
-        "role_arn": "arn:aws:iam::660094406059:role/dev-ZappaLambdaExecutionRole",
+        "role_arn": "###:###:###:role/dev-ZappaLambdaExecutionRole",
         "timeout_seconds": 30
     }
 }

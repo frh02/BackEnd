@@ -1,4 +1,4 @@
-# Cloud-Computing-MemCache 
+# Simple Image Gallery WebApp
 
 # About Project
 

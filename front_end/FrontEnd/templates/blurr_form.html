@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Blurr Image</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://xinyu910-static.s3.amazonaws.com/static/styles.css">
+</head>
+<html>
+    <body>
+     {% include "nav_bar.html" %}
+        <div class="formContainer" style="width: 68vmin; height:57vmin;">
+            <form action="{{ url_for('blur')}}" method="post" enctype="multipart/form-data">
+                <div id ="upload" style="margin-top:0.2vmin;">
+                    <label for="file" class="form-label">Choose your image</label>
+                    <input class="form-control p-2" name = 'file' id="file" type="file" accept="image/*" required>
+                </div>
+                <label for="kernel_size" class="form-label">Kernel Size</label>
+                <input type="number" name="kernel_size" id="kernel_size" class="form-control" required/>  
+                <span class="input-group-addon">Choose a filter type</span>
+                <select name="filter_type", class="selectpicker form-control", id="filter_type">
+                    <option value="averaging">Averaging</option>
+                    <option value="gaussian">Gaussian</option>
+                    <option value="median">Median</option>
+                </select>       
+                <div style="text-align: center">
+                    <button type="submit" value="get" class="form-button" style="background-color: #bf9988">Blurr Image</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

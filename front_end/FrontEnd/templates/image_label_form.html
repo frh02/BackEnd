@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Label Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://xinyu910-static.s3.amazonaws.com/static/styles.css">
+</head>
+<html>
+    <body>
+     {% include "nav_bar.html" %}
+        <div class="formContainer">
+            <form action="{{ url_for('detection')}}" method="post" enctype="multipart/form-data">
+                <div id ="upload">
+                    <label for="file" class="form-label">Choose your image</label>
+                    <input class="form-control p-2" name = 'file' id="file" type="file" accept="image/*" required>
+                </div>
+                <div style="text-align: center">
+                    <button type="submit" value="get" class="form-button" style="background-color: #cf7e6a">Predict</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

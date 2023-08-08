@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "app_function": "FrontEnd.webapp",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "webapp",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-glg6gm13z",
+        "manage_roles": false,
+        "role_name": "dev-ZappaLambdaExecutionRole",
+        "role_arn": "arn:aws:iam::660094406059:role/dev-ZappaLambdaExecutionRole",
+        "timeout_seconds": 30
+    }
+}
